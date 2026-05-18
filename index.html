@@ -1,441 +1,735 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zaryab Khan - Software Engineer</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Zaryab Khan — ERP & Full Stack Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <div class="logo">ZK.dev</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Zaryab Khan</h1>
-            <h2>Software Engineer</h2>
-            <p>Specialized in Odoo Development & Flutter Mobile Applications</p>
-            
-            <div class="terminal-window">
-                <div class="terminal-header">
-                    <div class="terminal-dots">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
-                    </div>
-                    <span class="terminal-title">zaryab-portfolio</span>
-                </div>
-                <div class="terminal-content">
-                    <div class="terminal-line">
-                        <span class="prompt">$ </span>
-                        <span class="command">whoami</span>
-                    </div>
-                    <div class="terminal-line">
-                        <span class="output">Software Engineer | Python Developer | Flutter Expert</span>
-                    </div>
-                    <div class="terminal-line">
-                        <span class="prompt">$ </span>
-                        <span class="command">skills --list</span>
-                    </div>
-                    <div class="terminal-line">
-                        <span class="output">Python, Dart, Flutter, Odoo, HTML, CSS, JavaScript, XML</span>
-                    </div>
-                    <div class="terminal-line">
-                        <span class="prompt">$ </span>
-                        <span class="command">status</span>
-                    </div>
-                    <div class="terminal-line">
-                        <span class="output">Available for freelancing projects! ✨</span>
-                    </div>
-                </div>
-            </div>
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">ZK.</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+</nav>
 
-            <div class="cta-buttons">
-                <a href="#projects" class="btn btn-primary">
-                    <i class="fas fa-code"></i>
-                    View Projects
-                </a>
-                <a href="#contact" class="btn btn-outline">
-                    <i class="fas fa-envelope"></i>
-                    Get In Touch
-                </a>
-            </div>
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">Available for opportunities</div>
+    <h1 class="hero-title">
+      <span class="line">Zaryab</span>
+      <span class="line"><span class="highlight">Khan</span></span>
+    </h1>
+    <p class="hero-desc">ERP &amp; Full Stack Developer specializing in <strong>Odoo</strong>, <strong>Flutter</strong>, and <strong>Python</strong>. Building scalable business solutions that actually create value.</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">
+        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+        View Projects
+      </a>
+      <a href="Zaryab_Resume.pdf" download class="btn-secondary">
+        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+        Download CV
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">2+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div>
+        <div class="stat-num">15+</div>
+        <div class="stat-label">Projects Delivered</div>
+      </div>
+      <div>
+        <div class="stat-num">8+</div>
+        <div class="stat-label">Happy Clients</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tech-pills">
+    <div class="pill"><span class="pill-dot" style="background:#00e5ff"></span>Odoo ERP</div>
+    <div class="pill"><span class="pill-dot" style="background:#54c5f8"></span>Flutter / Dart</div>
+    <div class="pill"><span class="pill-dot" style="background:#f7d354"></span>Python</div>
+    <div class="pill"><span class="pill-dot" style="background:#7c3aed"></span>REST API</div>
+    <div class="pill"><span class="pill-dot" style="background:#f59e0b"></span>JSON-RPC</div>
+    <div class="pill"><span class="pill-dot" style="background:#10b981"></span>Bootstrap</div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="section-label">About Me</div>
+    <h2 class="section-title">Turning complex business<br>logic into clean code</h2>
+
+    <div class="about-grid reveal">
+      <div class="about-text">
+        <p>I'm a Software Developer based in Islamabad with deep expertise in Odoo ERP customization, Flutter mobile development, and Python backend systems. I've built and delivered end-to-end solutions for clients across healthcare, manufacturing, HR consulting, and e-commerce industries.</p>
+        <p>My work focuses on bridging the gap between business requirements and technical implementation — whether that's automating complex HR workflows, building custom portals, or integrating mobile apps directly with ERP backends.</p>
+        <p>I currently work at <strong style="color:var(--text)">Tenxora</strong> as an ERP &amp; Full Stack Developer, and I take on freelance projects that push my skills further.</p>
+        <div style="margin-top:1.5rem; display:flex; gap:1rem;">
+          <a href="mailto:zaryabkhan4011@gmail.com" class="btn-primary" style="font-size:0.85rem; padding:0.65rem 1.5rem;">Get In Touch</a>
+          <a href="Zaryab_Resume.pdf" download class="btn-secondary" style="font-size:0.85rem; padding:0.65rem 1.5rem;">
+            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            Resume PDF
+          </a>
         </div>
-    </section>
+      </div>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>
-                    I'm a passionate <span class="highlight">Software Engineer</span> with expertise in 
-                    <span class="highlight">Odoo development</span> and <span class="highlight">Flutter mobile applications</span>. 
-                    Currently working at Synchronous Services Company, I specialize in creating efficient business solutions 
-                    and cross-platform mobile applications.
-                </p>
-                <p>
-                    My journey began with a <span class="highlight">Bachelor's in Computer Science & Technology</span> 
-                    from Hazara University, and I've been continuously expanding my skills in modern development technologies. 
-                    I have a strong foundation in problem-solving and a commitment to delivering high-quality solutions.
-                </p>
-                <p>
-                    I'm passionate about creating seamless user experiences and optimizing business processes through 
-                    innovative software solutions. Whether it's customizing Odoo modules or developing Flutter applications, 
-                    I bring dedication and technical expertise to every project.
-                </p>
-            </div>
-            
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <i class="fas fa-cogs"></i>
-                    <div>Odoo</div>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-python"></i>
-                    <div>Python</div>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-code"></i>
-                    <div>Dart</div>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-js-square"></i>
-                    <div>JavaScript</div>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-mobile-alt"></i>
-                    <div>Flutter</div>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-html5"></i>
-                    <div>HTML</div>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-css3-alt"></i>
-                    <div>CSS</div>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-file-code"></i>
-                    <div>XML</div>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-github"></i>
-                    <div>GitHub</div>
-                </div>
-                     <div class="skill-item">
-                    <i class="fab fa-globe"></i>
-                    <div>Bootstrap</div>
-                </div>
-            </div>
+      <div class="about-card">
+        <div style="font-family:'Syne',sans-serif; font-weight:700; margin-bottom:1rem;">Core Skills</div>
+        <div class="skills-list">
+          <span class="skill-tag">Odoo ERP</span>
+          <span class="skill-tag">Flutter</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">REST API</span>
+          <span class="skill-tag">JSON-RPC</span>
+          <span class="skill-tag">Bootstrap</span>
+          <span class="skill-tag">Git / GitHub</span>
+          <span class="skill-tag">Linux / Ubuntu</span>
+          <span class="skill-tag">OCR Integration</span>
+          <span class="skill-tag">Firebase</span>
+          <span class="skill-tag">Oracle Fusion API</span>
+          <span class="skill-tag">Dart</span>
+          <span class="skill-tag">HTML / CSS</span>
+          <span class="skill-tag">Client Interaction</span>
+          <span class="skill-tag">Teaching</span>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-users"></i>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">HR Management System</h3>
-                    <p class="project-description">
-                        Complete HR management solution in Odoo with automated payroll, attendance tracking, 
-                        and employee management workflows. Integrated with custom modules for enhanced functionality.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Odoo</span>
-                        <span class="tech-tag">XML</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                    </div>
-                    <!-- <div class="project-links">
-                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
-                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                    </div> -->
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-shopping-cart"></i>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">E-commerce Platform</h3>
-                    <p class="project-description">
-                        Full-featured e-commerce solution built with Odoo, including inventory management, 
-                        order processing, payment integration, and customer portal functionality.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Odoo</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">HTML/CSS</span>
-                    </div>
-                    <!-- <div class="project-links">
-                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
-                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                    </div> -->
-                </div>
-            </div>
-
-                <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Custom Dashboard in Odoo</h3>
-                    <p class="project-description">
-                        Developed a comprehensive custom dashboard for Odoo with analytics, data visualization. custom widgets, and 
-                        role-based access control for different user levels.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Odoo</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">XML</span>
-                        <span class="tech-tag">Chart.js</span>
-                    </div>
-                    <!-- <div class="project-links">
-                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
-                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                    </div> -->
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-id-card"></i>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Visitor Management System</h3>
-                    <p class="project-description">
-                        Comprehensive visitor management system with Odoo backend and Flutter mobile app. 
-                        Features ML Kit OCR for automatic ID scanning and real-time visitor tracking.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Flutter</span>
-                        <span class="tech-tag">Odoo</span>
-                        <span class="tech-tag">ML Kit</span>
-                        <span class="tech-tag">OCR</span>
-                    </div>
-                    <!-- <div class="project-links">
-                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
-                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                    </div> -->
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-mobile-alt"></i>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Flutter HR Mobile App</h3>
-                    <p class="project-description">
-                        Cross-platform mobile application for HR management, seamlessly integrated with Odoo APIs. 
-                        Features attendance tracking, leave management, and employee self-service portal.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Flutter</span>
-                        <span class="tech-tag">Dart</span>
-                        <span class="tech-tag">REST API</span>
-                        <span class="tech-tag">Odoo</span>
-                    </div>
-                    <!-- <div class="project-links">
-                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
-                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                    </div> -->
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-cut"></i>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Beyond Style - Salon Booking</h3>
-                    <p class="project-description">
-                        Complete frontend development for a salon booking application. Features service selection, 
-                        appointment scheduling, and user-friendly interface for seamless booking experience.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Flutter</span>
-                        <span class="tech-tag">Dart</span>
-                        <span class="tech-tag">UI/UX</span>
-                        <span class="tech-tag">Firebase</span>
-                    </div>
-                    <!-- <div class="project-links">
-                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
-                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                    </div> -->
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-car"></i>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Ride Rush - Ride Hailing App</h3>
-                    <p class="project-description">
-                        Frontend development for ride-hailing application with admin dashboard. 
-                        Features real-time tracking, booking management, and comprehensive dashboard design.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Flutter</span>
-                        <span class="tech-tag">Dart</span>
-                        <span class="tech-tag">Maps API</span>
-                        <span class="tech-tag">Dashboard</span>
-                    </div>
-                    <!-- <div class="project-links">
-                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
-                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                    </div> -->
-                </div>
-            </div>
+        <div style="margin-top:1.75rem; padding-top:1.5rem; border-top:1px solid var(--border);">
+          <div style="font-family:'Syne',sans-serif; font-weight:700; margin-bottom:0.75rem; font-size:0.9rem;">Contact</div>
+          <div style="font-size:0.82rem; color:var(--muted); display:flex; flex-direction:column; gap:0.4rem;">
+            <span>📧 zaryabkhan4011@gmail.com</span>
+            <span>📞 +92 316 9175019</span>
+            <span>📍 Islamabad, Pakistan</span>
+            <span>🔗 linkedin.com/in/zaryab-khan</span>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2 class="section-title">Experience</h2>
-        <div class="experience-timeline">
-            <div class="experience-item">
-                <div class="experience-dot"></div>
-                <div class="experience-content">
-                    <h3 class="experience-title">Python Developer</h3>
-                    <div class="experience-company">Synchronous Services Company</div>
-                    <div class="experience-duration">August 2024 - Present</div>
-                    <p class="experience-description">
-                        Working on Odoo customization, developing and optimizing modules for enhanced business operations. 
-                        Currently leading the development of an HR management system, focusing on automating payroll, 
-                        attendance, and employee management workflows. Collaborated with cross-functional teams to integrate 
-                        Odoo solutions with third-party applications.
-                    </p>
-                </div>
-            </div>
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-inner">
+    <div class="section-label">Work History</div>
+    <h2 class="section-title">Experience</h2>
+    <p class="section-desc">A track record of delivering real solutions for real businesses.</p>
 
-            <div class="experience-item">
-                <div class="experience-dot"></div>
-                <div class="experience-content">
-                    <h3 class="experience-title">Flutter Developer Intern</h3>
-                    <div class="experience-company">ArfaTech</div>
-                    <div class="experience-duration">July 2024 - August 2024</div>
-                    <p class="experience-description">
-                        Developed and maintained cross-platform mobile applications using Flutter and Dart. 
-                        Contributed to the development of Beyond Style salon booking app and played a key role 
-                        in Ride Rush ride-hailing app development, focusing on user experience optimization 
-                        and dispatching processes.
-                    </p>
-                </div>
-            </div>
+    <div class="exp-timeline">
 
-            <div class="experience-item">
-                <div class="experience-dot"></div>
-                <div class="experience-content">
-                    <h3 class="experience-title">Technical Support</h3>
-                    <div class="experience-company">Hazara University</div>
-                    <div class="experience-duration">October 2022 - January 2024</div>
-                    <p class="experience-description">
-                        Provided technical support to students and faculty, addressing and resolving operating system issues. 
-                        Assisted users with troubleshooting, installation, and configuration of software and hardware. 
-                        Enhanced user satisfaction by effectively managing technical concerns in a timely manner.
-                    </p>
-                </div>
+      <!-- Tenxora -->
+      <div class="exp-item reveal">
+        <div class="exp-date"><span>Apr 2026 – Present</span></div>
+        <div class="exp-dot"></div>
+        <div class="exp-content">
+          <div class="exp-company">Tenxora</div>
+          <div class="exp-role">ERP &amp; Full Stack Developer</div>
+          <div class="exp-projects">
+            <div class="exp-project">
+              <div class="exp-project-name">Airblue</div>
+              <p>Developed accounting automation solutions, streamlining financial workflows. Built an Asset Management Portal for tracking company assets. Performed data migration via scripts from Excel to Odoo.</p>
             </div>
+            <div class="exp-project">
+              <div class="exp-project-name">Bin Hashim Packaging</div>
+              <p>Customized Sales, Purchase, Inventory, and MRP modules. Automated order processing and built a customer portal for real-time order tracking.</p>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-content">
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <div>
-                        <h3>Email</h3>
-                        <p>zaryabkhan4011@gmail.com</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <div>
-                        <h3>Phone</h3>
-                        <p>+92 316 9175019</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                        <h3>Location</h3>
-                        <p>Islamabad Pakistan</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-briefcase"></i>
-                    <div>
-                        <h3>Availability</h3>
-                        <p>Available for freelance projects</p>
-                    </div>
-                </div>
+      <!-- Synchronous -->
+      <div class="exp-item reveal">
+        <div class="exp-date"><span>Aug 2024 – Mar 2026</span></div>
+        <div class="exp-dot"></div>
+        <div class="exp-content">
+          <div class="exp-company">Synchronous Services</div>
+          <div class="exp-role">Odoo / Python Developer</div>
+          <div class="exp-projects">
+            <div class="exp-project">
+              <div class="exp-project-name">Novacare Hospital</div>
+              <p>Enhanced HR module with automated workflows and self-service portals. Built a Flutter visitor management app with OCR for CNIC scanning, integrated directly with Odoo in real-time.</p>
             </div>
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">
-                    <i class="fas fa-paper-plane"></i>
-                    Send Message
-                </button>
-            </form>
+            <div class="exp-project">
+              <div class="exp-project-name">Tradify</div>
+              <p>Customized sales and purchase modules for an e-commerce platform, streamlining business logic and order management.</p>
+            </div>
+            <div class="exp-project">
+              <div class="exp-project-name">Impetus Consulting</div>
+              <p>Complete HR Management System: employee lifecycle, attendance, leave, performance, helpdesk customization, and self-service portals for employees and consultants.</p>
+            </div>
+            <div class="exp-project">
+              <div class="exp-project-name">GreenAgriMall</div>
+              <p>Improved sales, purchase, and accounting workflows. Built analytical dashboards and a dedicated customer portal.</p>
+            </div>
+            <div class="exp-project">
+              <div class="exp-project-name">Mahmood Group – Apparel</div>
+              <p>Designed a custom LC Management system. Built REST APIs to integrate Odoo with Oracle Fusion and created operational dashboards.</p>
+            </div>
+            <div class="exp-project">
+              <div class="exp-project-name">Mahmood Group – HR</div>
+              <p>Complete HR Management System in Odoo Community: appraisal, probation, resignation, succession planning, recruitment automation. Also built a Flutter mobile app for real-time HR self-service.</p>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="social-links">
-            <a href="https://github.com/zaryabk410" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="www.linkedin.com/in/zaryab-khan-23844b246" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/zaryab_khankhail/" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <!-- ArfaTech -->
+      <div class="exp-item reveal">
+        <div class="exp-date"><span>Jul 2024 – Aug 2024</span></div>
+        <div class="exp-dot"></div>
+        <div class="exp-content">
+          <div class="exp-company">ArfaTech</div>
+          <div class="exp-role">Flutter Developer Intern</div>
+          <div class="exp-projects">
+            <div class="exp-project">
+              <div class="exp-project-name">Beyond Style &amp; Ride Rush</div>
+              <p>Developed cross-platform mobile applications. Contributed to a salon booking app and played a key role in a ride-hailing &amp; dispatching application.</p>
+            </div>
+          </div>
         </div>
-        <p>&copy; 2024 Zaryab Khan. All rights reserved.</p>
-    </footer>
+      </div>
 
-    <script src="script.js"></script>
+      <!-- Hazara University -->
+      <div class="exp-item reveal">
+        <div class="exp-date"><span>Oct 2022 – Jan 2024</span></div>
+        <div class="exp-dot"></div>
+        <div class="exp-content">
+          <div class="exp-company">Hazara University</div>
+          <div class="exp-role">Technical Support</div>
+          <div class="exp-projects">
+            <div class="exp-project">
+              <div class="exp-project-name">IT Support &amp; Odoo Foundation</div>
+              <p>Provided technical support to faculty and students. First exploration of Odoo ERP — gaining foundational knowledge in core modules and customization.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-inner">
+    <div class="section-label">Portfolio</div>
+    <h2 class="section-title">Featured Projects</h2>
+    <p class="section-desc">Freelance and personal projects that showcase my range.</p>
+
+    <div class="projects-grid">
+
+      <!-- Visitor Management -->
+      <div class="project-card reveal">
+        <div class="project-thumb thumb-visitor">
+          <svg viewBox="0 0 340 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="vg" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.3"/>
+                <stop offset="100%" stop-color="#0084ff" stop-opacity="0.1"/>
+              </linearGradient>
+            </defs>
+            <rect width="340" height="200" fill="url(#vg)"/>
+            <!-- Phone mockup -->
+            <rect x="120" y="25" width="100" height="150" rx="12" fill="#1a1a2e" stroke="#00e5ff" stroke-width="1.5"/>
+            <rect x="135" y="40" width="70" height="95" rx="4" fill="#0d1117"/>
+            <!-- Face scan lines -->
+            <circle cx="170" cy="80" r="22" fill="none" stroke="#00e5ff" stroke-width="1" stroke-dasharray="4 2" opacity="0.6"/>
+            <circle cx="170" cy="80" r="14" fill="#00e5ff" opacity="0.1"/>
+            <line x1="148" y1="55" x2="148" y2="65" stroke="#00e5ff" stroke-width="1.5"/>
+            <line x1="148" y1="55" x2="158" y2="55" stroke="#00e5ff" stroke-width="1.5"/>
+            <line x1="192" y1="55" x2="192" y2="65" stroke="#00e5ff" stroke-width="1.5"/>
+            <line x1="192" y1="55" x2="182" y2="55" stroke="#00e5ff" stroke-width="1.5"/>
+            <rect x="145" y="110" width="50" height="6" rx="3" fill="#00e5ff" opacity="0.3"/>
+            <rect x="155" y="120" width="30" height="4" rx="2" fill="#ffffff" opacity="0.15"/>
+            <rect x="135" y="148" width="70" height="8" rx="4" fill="#00e5ff" opacity="0.8"/>
+            <!-- OCR label -->
+            <text x="170" y="192" text-anchor="middle" fill="#00e5ff" font-size="9" opacity="0.7" font-family="monospace">OCR • CNIC SCAN • FLUTTER</text>
+          </svg>
+          <span class="project-thumb-label">Flutter + Odoo</span>
+        </div>
+        <div class="project-body">
+          <div class="project-name">Visitor Management System</div>
+          <p class="project-desc">Cross-platform app with real-time OCR for CNIC scanning, employee directory access, check-in/out workflows, and visual analytics. No Odoo user license required.</p>
+          <div class="project-tags">
+            <span class="project-tag">Flutter</span>
+            <span class="project-tag">Odoo</span>
+            <span class="project-tag">OCR</span>
+            <span class="project-tag">REST API</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- HR Management System -->
+      <div class="project-card reveal">
+        <div class="project-thumb thumb-hr">
+          <svg viewBox="0 0 340 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="hrg" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.3"/>
+                <stop offset="100%" stop-color="#1a1a2e" stop-opacity="0.1"/>
+              </linearGradient>
+            </defs>
+            <rect width="340" height="200" fill="url(#hrg)"/>
+            <!-- Dashboard mockup -->
+            <rect x="30" y="25" width="280" height="150" rx="8" fill="#0d1117" stroke="#7c3aed" stroke-width="1"/>
+            <rect x="30" y="25" width="280" height="22" rx="8" fill="#7c3aed" opacity="0.4"/>
+            <text x="170" y="40" text-anchor="middle" fill="white" font-size="8" font-family="sans-serif" font-weight="bold">HR MANAGEMENT SYSTEM</text>
+            <!-- Stats boxes -->
+            <rect x="42" y="60" width="58" height="38" rx="5" fill="#7c3aed" opacity="0.2"/>
+            <text x="71" y="75" text-anchor="middle" fill="#a78bfa" font-size="14" font-weight="bold" font-family="sans-serif">48</text>
+            <text x="71" y="88" text-anchor="middle" fill="#6b7280" font-size="6" font-family="sans-serif">EMPLOYEES</text>
+            <rect x="110" y="60" width="58" height="38" rx="5" fill="#10b981" opacity="0.15"/>
+            <text x="139" y="75" text-anchor="middle" fill="#34d399" font-size="14" font-weight="bold" font-family="sans-serif">12</text>
+            <text x="139" y="88" text-anchor="middle" fill="#6b7280" font-size="6" font-family="sans-serif">ON LEAVE</text>
+            <rect x="178" y="60" width="58" height="38" rx="5" fill="#f59e0b" opacity="0.15"/>
+            <text x="207" y="75" text-anchor="middle" fill="#fbbf24" font-size="14" font-weight="bold" font-family="sans-serif">5</text>
+            <text x="207" y="88" text-anchor="middle" fill="#6b7280" font-size="6" font-family="sans-serif">TICKETS</text>
+            <rect x="246" y="60" width="52" height="38" rx="5" fill="#ef4444" opacity="0.15"/>
+            <text x="272" y="75" text-anchor="middle" fill="#f87171" font-size="14" font-weight="bold" font-family="sans-serif">3</text>
+            <text x="272" y="88" text-anchor="middle" fill="#6b7280" font-size="6" font-family="sans-serif">PROBATION</text>
+            <!-- List -->
+            <rect x="42" y="110" width="256" height="6" rx="3" fill="#ffffff" opacity="0.06"/>
+            <rect x="42" y="122" width="200" height="6" rx="3" fill="#ffffff" opacity="0.04"/>
+            <rect x="42" y="134" width="230" height="6" rx="3" fill="#ffffff" opacity="0.05"/>
+            <rect x="42" y="146" width="180" height="6" rx="3" fill="#ffffff" opacity="0.03"/>
+            <circle cx="258" cy="147" r="6" fill="#10b981" opacity="0.6"/>
+          </svg>
+          <span class="project-thumb-label">Odoo + Python</span>
+        </div>
+        <div class="project-body">
+          <div class="project-name">Complete HR Management System</div>
+          <p class="project-desc">Full employee lifecycle management covering appraisals, probation tracking, resignation, succession planning, helpdesk, and self-service portals for Mahmood Group.</p>
+          <div class="project-tags">
+            <span class="project-tag">Odoo</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Flutter</span>
+            <span class="project-tag">HR Module</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flutter License-Free App -->
+      <div class="project-card reveal">
+        <div class="project-thumb thumb-flutter">
+          <svg viewBox="0 0 340 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="flg" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#54c5f8" stop-opacity="0.25"/>
+                <stop offset="100%" stop-color="#7f5a83" stop-opacity="0.2"/>
+              </linearGradient>
+            </defs>
+            <rect width="340" height="200" fill="url(#flg)"/>
+            <!-- Two phones -->
+            <rect x="80" y="30" width="75" height="130" rx="10" fill="#1a1a2e" stroke="#54c5f8" stroke-width="1.5"/>
+            <rect x="185" y="30" width="75" height="130" rx="10" fill="#1a1a2e" stroke="#7f5a83" stroke-width="1.5"/>
+            <!-- Screen content left -->
+            <rect x="90" y="46" width="55" height="80" rx="4" fill="#0d1117"/>
+            <rect x="97" y="52" width="40" height="20" rx="4" fill="#54c5f8" opacity="0.15"/>
+            <text x="117" y="65" text-anchor="middle" fill="#54c5f8" font-size="7" font-family="sans-serif">ATTENDANCE</text>
+            <rect x="97" y="76" width="40" height="8" rx="3" fill="#10b981" opacity="0.4"/>
+            <rect x="97" y="88" width="30" height="5" rx="2" fill="#ffffff" opacity="0.1"/>
+            <rect x="97" y="97" width="35" height="5" rx="2" fill="#ffffff" opacity="0.08"/>
+            <rect x="93" y="135" width="47" height="12" rx="6" fill="#54c5f8" opacity="0.7"/>
+            <!-- Screen content right -->
+            <rect x="195" y="46" width="55" height="80" rx="4" fill="#0d1117"/>
+            <rect x="202" y="52" width="40" height="20" rx="4" fill="#7f5a83" opacity="0.15"/>
+            <text x="222" y="65" text-anchor="middle" fill="#a78bfa" font-size="7" font-family="sans-serif">LEAVE REQ</text>
+            <rect x="202" y="76" width="40" height="8" rx="3" fill="#f59e0b" opacity="0.4"/>
+            <rect x="202" y="88" width="30" height="5" rx="2" fill="#ffffff" opacity="0.1"/>
+            <rect x="202" y="97" width="35" height="5" rx="2" fill="#ffffff" opacity="0.08"/>
+            <rect x="198" y="135" width="47" height="12" rx="6" fill="#7f5a83" opacity="0.7"/>
+            <!-- Link line -->
+            <path d="M155 95 C165 80 175 110 185 95" stroke="#00e5ff" stroke-width="1" fill="none" stroke-dasharray="3 2" opacity="0.5"/>
+            <text x="170" y="185" text-anchor="middle" fill="#54c5f8" font-size="8" font-family="monospace" opacity="0.7">NO LICENSE REQUIRED</text>
+          </svg>
+          <span class="project-thumb-label">Freelance</span>
+        </div>
+        <div class="project-body">
+          <div class="project-name">Flutter App — License-Free Odoo Access</div>
+          <p class="project-desc">Custom Flutter app allowing employees to manage attendance, leave requests, and HR data without needing Odoo user licenses — reducing operational costs significantly.</p>
+          <div class="project-tags">
+            <span class="project-tag">Flutter</span>
+            <span class="project-tag">Odoo API</span>
+            <span class="project-tag">JSON-RPC</span>
+            <span class="project-tag">Freelance</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- LC Management -->
+      <div class="project-card reveal">
+        <div class="project-thumb thumb-lc">
+          <svg viewBox="0 0 340 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="lcg" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#302b63" stop-opacity="0.6"/>
+                <stop offset="100%" stop-color="#24243e" stop-opacity="0.4"/>
+              </linearGradient>
+            </defs>
+            <rect width="340" height="200" fill="url(#lcg)"/>
+            <!-- Document icon -->
+            <rect x="100" y="30" width="140" height="130" rx="8" fill="#0f0c29" stroke="#7c3aed" stroke-width="1.5"/>
+            <rect x="100" y="30" width="140" height="26" rx="8" fill="#302b63"/>
+            <text x="170" y="47" text-anchor="middle" fill="#a78bfa" font-size="9" font-family="sans-serif" font-weight="bold">LETTER OF CREDIT</text>
+            <!-- Content lines -->
+            <rect x="115" y="68" width="110" height="6" rx="3" fill="#ffffff" opacity="0.1"/>
+            <rect x="115" y="80" width="90" height="5" rx="2" fill="#ffffff" opacity="0.07"/>
+            <rect x="115" y="91" width="100" height="5" rx="2" fill="#ffffff" opacity="0.07"/>
+            <!-- Amount box -->
+            <rect x="115" y="104" width="110" height="28" rx="6" fill="#302b63" opacity="0.8"/>
+            <text x="170" y="116" text-anchor="middle" fill="#6b7280" font-size="7" font-family="sans-serif">AMOUNT (USD)</text>
+            <text x="170" y="128" text-anchor="middle" fill="#a78bfa" font-size="13" font-weight="bold" font-family="sans-serif">$1,250,000</text>
+            <!-- Oracle Fusion integration arrow -->
+            <text x="60" y="165" text-anchor="middle" fill="#6b7280" font-size="7" font-family="sans-serif">Odoo</text>
+            <text x="280" y="165" text-anchor="middle" fill="#6b7280" font-size="7" font-family="sans-serif">Oracle</text>
+            <line x1="85" y1="162" x2="255" y2="162" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="5 3" opacity="0.6" marker-end="url(#arr)"/>
+            <text x="170" y="155" text-anchor="middle" fill="#a78bfa" font-size="7" font-family="monospace" opacity="0.7">REST API Integration</text>
+          </svg>
+          <span class="project-thumb-label">Odoo + Oracle Fusion</span>
+        </div>
+        <div class="project-body">
+          <div class="project-name">LC Management — Mahmood Group Apparel</div>
+          <p class="project-desc">Custom Letter of Credit management system with REST API integration between Odoo and Oracle Fusion. Operational dashboards for data-driven decision-making.</p>
+          <div class="project-tags">
+            <span class="project-tag">Odoo</span>
+            <span class="project-tag">Oracle Fusion</span>
+            <span class="project-tag">REST API</span>
+            <span class="project-tag">Python</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Student Evaluation -->
+      <div class="project-card reveal">
+        <div class="project-thumb thumb-student">
+          <svg viewBox="0 0 340 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="stg" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#134e5e" stop-opacity="0.5"/>
+                <stop offset="100%" stop-color="#71b280" stop-opacity="0.3"/>
+              </linearGradient>
+            </defs>
+            <rect width="340" height="200" fill="url(#stg)"/>
+            <!-- Report card -->
+            <rect x="60" y="25" width="220" height="145" rx="10" fill="#0d1117" stroke="#71b280" stroke-width="1"/>
+            <rect x="60" y="25" width="220" height="24" rx="10" fill="#134e5e"/>
+            <text x="170" y="41" text-anchor="middle" fill="#71b280" font-size="8" font-weight="bold" font-family="sans-serif">STUDENT EVALUATION REPORT</text>
+            <!-- Grade bars -->
+            <text x="75" y="65" fill="#9ca3af" font-size="8" font-family="sans-serif">Mathematics</text>
+            <rect x="150" y="57" width="115" height="8" rx="4" fill="#ffffff" opacity="0.05"/>
+            <rect x="150" y="57" width="105" height="8" rx="4" fill="#71b280" opacity="0.7"/>
+            <text x="270" y="65" fill="#71b280" font-size="7" font-family="sans-serif">A+</text>
+
+            <text x="75" y="82" fill="#9ca3af" font-size="8" font-family="sans-serif">Science</text>
+            <rect x="150" y="74" width="115" height="8" rx="4" fill="#ffffff" opacity="0.05"/>
+            <rect x="150" y="74" width="92" height="8" rx="4" fill="#10b981" opacity="0.7"/>
+            <text x="270" y="82" fill="#10b981" font-size="7" font-family="sans-serif">A</text>
+
+            <text x="75" y="99" fill="#9ca3af" font-size="8" font-family="sans-serif">English</text>
+            <rect x="150" y="91" width="115" height="8" rx="4" fill="#ffffff" opacity="0.05"/>
+            <rect x="150" y="91" width="100" height="8" rx="4" fill="#3b82f6" opacity="0.7"/>
+            <text x="270" y="99" fill="#3b82f6" font-size="7" font-family="sans-serif">A</text>
+
+            <text x="75" y="116" fill="#9ca3af" font-size="8" font-family="sans-serif">Attendance</text>
+            <rect x="150" y="108" width="115" height="8" rx="4" fill="#ffffff" opacity="0.05"/>
+            <rect x="150" y="108" width="110" height="8" rx="4" fill="#f59e0b" opacity="0.7"/>
+            <text x="270" y="116" fill="#f59e0b" font-size="7" font-family="sans-serif">95%</text>
+            <!-- Email badge -->
+            <rect x="75" y="130" width="190" height="26" rx="6" fill="#134e5e" opacity="0.6"/>
+            <text x="170" y="144" text-anchor="middle" fill="#71b280" font-size="8" font-family="sans-serif">📧 Auto-sent PDF to parents</text>
+          </svg>
+          <span class="project-thumb-label">Odoo Customization</span>
+        </div>
+        <div class="project-body">
+          <div class="project-name">Student Evaluation System</div>
+          <p class="project-desc">Customized Odoo HR module for academic assessments. Teachers submit grades, attendance, and behavior data. System auto-calculates percentages, generates PDF reports, and emails parents.</p>
+          <div class="project-tags">
+            <span class="project-tag">Odoo</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">PDF Reports</span>
+            <span class="project-tag">Email Automation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recruitment Offer Automation -->
+      <div class="project-card reveal">
+        <div class="project-thumb thumb-recruit">
+          <svg viewBox="0 0 340 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="rg" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#1e3c72" stop-opacity="0.5"/>
+                <stop offset="100%" stop-color="#2a5298" stop-opacity="0.3"/>
+              </linearGradient>
+            </defs>
+            <rect width="340" height="200" fill="url(#rg)"/>
+            <!-- Flow diagram -->
+            <rect x="30" y="75" width="70" height="40" rx="8" fill="#1e3c72" stroke="#3b82f6" stroke-width="1"/>
+            <text x="65" y="92" text-anchor="middle" fill="#93c5fd" font-size="7" font-family="sans-serif">Recruitment</text>
+            <text x="65" y="103" text-anchor="middle" fill="#93c5fd" font-size="7" font-family="sans-serif">Module</text>
+            <line x1="100" y1="95" x2="128" y2="95" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#blue-arrow)"/>
+            <rect x="128" y="75" width="84" height="40" rx="8" fill="#1e3c72" stroke="#60a5fa" stroke-width="1"/>
+            <text x="170" y="92" text-anchor="middle" fill="#93c5fd" font-size="7" font-family="sans-serif">Offer Letter</text>
+            <text x="170" y="103" text-anchor="middle" fill="#93c5fd" font-size="7" font-family="sans-serif">Auto-Generated</text>
+            <line x1="212" y1="95" x2="240" y2="95" stroke="#3b82f6" stroke-width="1.5"/>
+            <rect x="240" y="75" width="70" height="40" rx="8" fill="#1e3c72" stroke="#22d3ee" stroke-width="1"/>
+            <text x="275" y="92" text-anchor="middle" fill="#67e8f9" font-size="7" font-family="sans-serif">Candidate</text>
+            <text x="275" y="103" text-anchor="middle" fill="#67e8f9" font-size="7" font-family="sans-serif">Portal</text>
+            <!-- Accept/Reject -->
+            <rect x="205" y="140" width="50" height="20" rx="5" fill="#10b981" opacity="0.7"/>
+            <text x="230" y="153" text-anchor="middle" fill="white" font-size="7" font-family="sans-serif">✓ ACCEPT</text>
+            <rect x="265" y="140" width="50" height="20" rx="5" fill="#ef4444" opacity="0.7"/>
+            <text x="290" y="153" text-anchor="middle" fill="white" font-size="7" font-family="sans-serif">✗ REJECT</text>
+            <text x="170" y="185" text-anchor="middle" fill="#60a5fa" font-size="8" font-family="monospace" opacity="0.7">DIGITAL • PAPERLESS • AUTOMATED</text>
+          </svg>
+          <span class="project-thumb-label">Odoo Automation</span>
+        </div>
+        <div class="project-body">
+          <div class="project-name">Recruitment Offer Automation</div>
+          <p class="project-desc">End-to-end digital offer letter flow. Odoo auto-generates and sends offer letters; candidates accept or reject via the portal and securely download documents.</p>
+          <div class="project-tags">
+            <span class="project-tag">Odoo</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Portal</span>
+            <span class="project-tag">Automation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chat App (FYP) -->
+      <div class="project-card reveal">
+        <div class="project-thumb thumb-chat">
+          <svg viewBox="0 0 340 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="cg" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#11998e" stop-opacity="0.4"/>
+                <stop offset="100%" stop-color="#38ef7d" stop-opacity="0.2"/>
+              </linearGradient>
+            </defs>
+            <rect width="340" height="200" fill="url(#cg)"/>
+            <!-- Chat bubbles -->
+            <rect x="50" y="40" width="140" height="30" rx="15" rx="15 15 15 2" fill="#11998e" opacity="0.7"/>
+            <text x="120" y="60" text-anchor="middle" fill="white" font-size="9" font-family="sans-serif">Hey! Video call tonight? 🎥</text>
+            <rect x="150" y="82" width="140" height="30" rx="15" fill="#1a1a2e" stroke="#38ef7d" stroke-width="1"/>
+            <text x="220" y="102" text-anchor="middle" fill="#38ef7d" font-size="9" font-family="sans-serif">Sure! Firebase ready ✓</text>
+            <rect x="50" y="124" width="120" height="30" rx="15" fill="#11998e" opacity="0.5"/>
+            <text x="110" y="144" text-anchor="middle" fill="white" font-size="9" font-family="sans-serif">Story updated 📸</text>
+            <!-- Feature badges -->
+            <rect x="50" y="168" width="70" height="14" rx="7" fill="#38ef7d" opacity="0.3"/>
+            <text x="85" y="178" text-anchor="middle" fill="#38ef7d" font-size="6" font-family="sans-serif">REAL-TIME</text>
+            <rect x="128" y="168" width="70" height="14" rx="7" fill="#38ef7d" opacity="0.2"/>
+            <text x="163" y="178" text-anchor="middle" fill="#38ef7d" font-size="6" font-family="sans-serif">VIDEO CALL</text>
+            <rect x="206" y="168" width="70" height="14" rx="7" fill="#38ef7d" opacity="0.15"/>
+            <text x="241" y="178" text-anchor="middle" fill="#38ef7d" font-size="6" font-family="sans-serif">ADMIN PANEL</text>
+          </svg>
+          <span class="project-thumb-label">Flutter + Firebase — FYP</span>
+        </div>
+        <div class="project-body">
+          <div class="project-name">Chatting Application — Final Year Project</div>
+          <p class="project-desc">Full-featured chat app with Flutter frontend and Firebase backend. Real-time 1:1 and group messaging, story updates, audio/video calling, and an admin panel for user management.</p>
+          <div class="project-tags">
+            <span class="project-tag">Flutter</span>
+            <span class="project-tag">Firebase</span>
+            <span class="project-tag">Dart</span>
+            <span class="project-tag">Real-time</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-inner">
+    <div class="section-label">Technical Expertise</div>
+    <h2 class="section-title">Skills &amp; Proficiency</h2>
+
+    <div class="skills-categories reveal">
+      <div class="skill-category">
+        <span class="skill-cat-icon">⚙️</span>
+        <div class="skill-cat-title">ERP Development</div>
+        <div class="skill-cat-items">
+          <div>
+            <div class="skill-bar-row"><span class="skill-name">Odoo ERP</span><span class="skill-pct">95%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="--w:0.95"></div></div>
+          </div>
+          <div>
+            <div class="skill-bar-row"><span class="skill-name">Python / ORM</span><span class="skill-pct">88%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="--w:0.88"></div></div>
+          </div>
+          <div>
+            <div class="skill-bar-row"><span class="skill-name">JSON-RPC</span><span class="skill-pct">85%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="--w:0.85"></div></div>
+          </div>
+          <div>
+            <div class="skill-bar-row"><span class="skill-name">REST API Design</span><span class="skill-pct">82%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="--w:0.82"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <span class="skill-cat-icon">📱</span>
+        <div class="skill-cat-title">Mobile Development</div>
+        <div class="skill-cat-items">
+          <div>
+            <div class="skill-bar-row"><span class="skill-name">Flutter / Dart</span><span class="skill-pct">90%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="--w:0.90"></div></div>
+          </div>
+          <div>
+            <div class="skill-bar-row"><span class="skill-name">Firebase</span><span class="skill-pct">80%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="--w:0.80"></div></div>
+          </div>
+          <div>
+            <div class="skill-bar-row"><span class="skill-name">OCR Integration</span><span class="skill-pct">78%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="--w:0.78"></div></div>
+          </div>
+          <div>
+            <div class="skill-bar-row"><span class="skill-name">App Architecture</span><span class="skill-pct">82%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="--w:0.82"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <span class="skill-cat-icon">🌐</span>
+        <div class="skill-cat-title">Web &amp; Tools</div>
+        <div class="skill-cat-items">
+          <div>
+            <div class="skill-bar-row"><span class="skill-name">Frontend (HTML/CSS)</span><span class="skill-pct">80%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="--w:0.80"></div></div>
+          </div>
+          <div>
+            <div class="skill-bar-row"><span class="skill-name">Bootstrap</span><span class="skill-pct">78%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="--w:0.78"></div></div>
+          </div>
+          <div>
+            <div class="skill-bar-row"><span class="skill-name">Git / GitHub</span><span class="skill-pct">85%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="--w:0.85"></div></div>
+          </div>
+          <div>
+            <div class="skill-bar-row"><span class="skill-name">Linux / Ubuntu</span><span class="skill-pct">75%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="--w:0.75"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="section-inner">
+    <div class="section-label">Academic Background</div>
+    <h2 class="section-title">Education &amp; Certifications</h2>
+
+    <div class="edu-grid reveal">
+      <div class="edu-card">
+        <div class="edu-icon">🎓</div>
+        <div>
+          <div class="edu-degree">Bachelor in Computer Science &amp; Technology</div>
+          <div class="edu-school">Hazara University</div>
+          <div class="edu-detail">Majors: Computer Science</div>
+        </div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-icon">📐</div>
+        <div>
+          <div class="edu-degree">Pre-Engineering</div>
+          <div class="edu-school">Jinnah College Mansehra</div>
+          <div class="edu-detail">Intermediate level, Engineering track</div>
+        </div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-icon">🌐</div>
+        <div>
+          <div class="edu-degree">Certification — Frontend Web Development</div>
+          <div class="edu-school">Hope Academy Mansehra</div>
+          <div class="edu-detail">HTML, CSS, Bootstrap, JavaScript</div>
+        </div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-icon">📱</div>
+        <div>
+          <div class="edu-degree">Certification — Flutter App Development</div>
+          <div class="edu-school">Milestone Academy Mansehra</div>
+          <div class="edu-detail">Flutter, Dart, cross-platform mobile apps</div>
+        </div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-icon">👨‍🏫</div>
+        <div>
+          <div class="edu-degree">Teaching — Mobile Application Development</div>
+          <div class="edu-school">Hazara University</div>
+          <div class="edu-detail">Programming course instructor</div>
+        </div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-icon">💻</div>
+        <div>
+          <div class="edu-degree">Teaching — Diploma of Information Technology</div>
+          <div class="edu-school">Pakistan Group of Colleges</div>
+          <div class="edu-detail">IT fundamentals and practical skills</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="contact-inner reveal">
+      <div class="section-label" style="text-align:center">Let's Work Together</div>
+      <h2 class="section-title" style="text-align:center">Have a project in mind?</h2>
+      <p class="section-desc" style="text-align:center; margin: 0 auto 1rem;">I'm open to full-time roles, freelance Odoo/Flutter projects, and collaborations. Let's build something great.</p>
+
+      <div class="contact-links">
+        <a href="mailto:zaryabkhan4011@gmail.com" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          zaryabkhan4011@gmail.com
+        </a>
+        <a href="tel:+923169175019" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          +92 316 917 5019
+        </a>
+        <a href="https://linkedin.com/in/zaryab-khan" target="_blank" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="Zaryab_Resume.pdf" download class="contact-link" style="border-color:rgba(0,229,255,0.3); color:var(--accent);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>© 2025 Zaryab Khan. Built with passion from Islamabad 🇵🇰</div>
+  <div>ERP &amp; Full Stack Developer</div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
