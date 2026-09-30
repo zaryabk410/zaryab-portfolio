@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500"><style>
+text{font-family:'Bricolage Grotesque','Segoe UI',Helvetica,Arial,sans-serif}
+.fl{animation:fl 6s ease-in-out infinite}.fl2{animation:fl 7s ease-in-out infinite -2s}.fl3{animation:fl 8s ease-in-out infinite -4s}
+@keyframes fl{50%{transform:translateY(-8px)}}
+.pulse{animation:pu 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes pu{50%{opacity:.35}}
+.grow{transform-box:fill-box;transform-origin:bottom;animation:gr 3.2s cubic-bezier(.2,.8,.2,1) infinite alternate}
+@keyframes gr{from{transform:scaleY(.35)}}
+.dash{stroke-dasharray:8 8;animation:da 1.2s linear infinite}@keyframes da{to{stroke-dashoffset:-16}}
+.draw{stroke-dasharray:600;stroke-dashoffset:600;animation:dr 4s ease infinite}@keyframes dr{40%,80%{stroke-dashoffset:0}100%{stroke-dashoffset:-600}}
+.scan{animation:sc 2.6s ease-in-out infinite alternate}@keyframes sc{from{transform:translateY(0)}to{transform:translateY(92px)}}
+.spin{transform-box:fill-box;transform-origin:center;animation:sp 12s linear infinite}@keyframes sp{to{transform:rotate(360deg)}}
+.slide{animation:sl 5s ease-in-out infinite}@keyframes sl{0%,15%{transform:translateX(0)}45%,65%{transform:translateX(250px)}95%,100%{transform:translateX(0)}}
+.pop{transform-box:fill-box;transform-origin:center;animation:po 3s ease-in-out infinite}@keyframes po{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style><rect width="800" height="500" fill="#DDEFE7"/><pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="rgba(18,131,138,.10)"/></pattern><rect width="800" height="500" fill="url(#g)"/><rect x="60" y="60" width="680" height="380" rx="14" fill="#FFFFFF"/><path d="M60 74a14 14 0 0 1 14-14h652a14 14 0 0 1 14 14v16h-680z" fill="#F3EEF2"/><circle cx="78" cy="76" r="4" fill="#714B67"/><circle cx="92" cy="76" r="4" fill="#C29DB8"/><circle cx="106" cy="76" r="4" fill="#E9B949"/><text x="88" y="128" font-size="20" font-weight="700" fill="#1E1220" text-anchor="start" opacity="1">Sales overview</text><path d="M100 340 L170 300 L240 315 L310 250 L380 270 L450 200 L520 215 L590 150 L590 380 L100 380Z" fill="#7CC6C9" opacity=".35"/><path d="M100 340 L170 300 L240 315 L310 250 L380 270 L450 200 L520 215 L590 150" fill="none" stroke="#12838A" stroke-width="4" stroke-linejoin="round" class="draw"/><circle cx="100" cy="340" r="5" fill="#12838A"/><circle cx="170" cy="300" r="5" fill="#12838A"/><circle cx="240" cy="315" r="5" fill="#12838A"/><circle cx="310" cy="250" r="5" fill="#12838A"/><circle cx="380" cy="270" r="5" fill="#12838A"/><circle cx="450" cy="200" r="5" fill="#12838A"/><circle cx="520" cy="215" r="5" fill="#12838A"/><circle cx="590" cy="150" r="5" fill="#12838A"/><g transform="translate(660 190)"><path d="M0 -60 C 40 -40 40 20 0 40 C -40 20 -40 -40 0 -60Z" fill="#12838A" class="pop"/><path d="M0 -40 V60" stroke="#1E1220" stroke-width="3"/></g><rect x="600" y="300" width="56.48" height="28" rx="14.0" fill="#E9B949"/><text x="612" y="317" font-size="14" font-weight="600" fill="#1E1220" text-anchor="start" opacity="1">+18%</text><rect x="100" y="390" width="490" height="2" rx="4" fill="#F3EEF2" opacity="1"/></svg>
